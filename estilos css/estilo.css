@@ -1,0 +1,96 @@
+
+/* retirando margem de toda a pagina e borda dos elementos */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* criando variaveis de cores */
+:root{
+    --cor-fundo: #222831;
+    --cor-cabeçalho: #222831;
+    --cor-rodapé: #222831;
+    --cor-botao: #DBE2EF;
+    --cor-botao-diferente: #E3FDFD;
+    --cor-fonte-titulo: #252A34;
+    --cor-fundo-titulos: #3F72AF;
+    --cor-fonte: #EAEAEA;
+}
+
+/* fazendo cores do body e tamanho */
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+}
+
+/* definindo a distancia dos itens da parte superior, inferior, direita e esquerda, e a cor de fundo do cabeçalho */
+.cabecalho{
+    padding: 2% 0% 2% 40%;
+    background-color: var(--cor-cabeçalho); 
+    gap: 50px;
+}
+
+/* definindo as funções dos botões */
+.cabecalho_botao{
+    /* tamanho da fonte */
+    font-size: 15px;
+    /* cor da fonte */
+    color: var(--cor-fonte-titulo);
+    /* retirando a linha que fica embaixo da escrita */
+    text-decoration: none;
+    /* cor fundo botão */
+    background-color: var(--cor-botao);
+    /* borda do botao, tamanho e cor */
+    border: 3px groove var(black);
+    /* curvatura da borda */
+    border-radius: 5px;
+    /* tamanho botao */
+    width: 150px;
+    /* distancia texto borda */
+    padding: 1px;
+    /* alinhando o texto */
+    text-align: center;
+}
+
+/* cor que vai ficar, quando passar o mouse por cima */
+.cabecalho_botao:hover{
+    background-color: var(--cor-botao-diferente);
+}
+
+/* local que vai ficar no site, alinhando os itens no centro, e equalizando o espaço dos itens entre si */
+.conteudo_site{
+    background-color: var(--cor-fundo-titulos);
+    color: var(--cor-fonte-subtitulo);
+    font-size: 30px;
+    padding: 2% 20% 2% 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+}
+
+/* mudando tamanho das fontes e cores do conteudo so site */
+.titulo{
+    font-size: 40px;
+    color: var(--cor-fonte-titulo);
+    background-color: var(--cor-fundo-titulos);
+}
+
+.subtitulo{
+    font-size: 25px;
+    color: var(--cor-fonte-titulo);
+}
+
+.rodape{
+    padding: 2% 10% 2% 10%;
+    text-align: center;
+    background-color: var(--cor-rodapé);
+    color: var(--cor-fonte);
+}
+
+.table{
+    color: #FFFFFF;
+}
+
+button{
+   border-radius: 3px;
+}
